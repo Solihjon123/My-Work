@@ -1,0 +1,237 @@
+@import "./font.css";
+
+:root {
+    --MR: 'Montserrat-Regular', sans-serif;
+    --MSB: 'Montserrat-SemiBold', sans-serif;
+    --MBI: 'Montserrat-BoldItalic', sans-serif;
+    --MB: 'Montserrat-Black', sans-serif;
+    --TB: 'trebuchet-ms-bold', sans-serif;
+    --TBI: 'trebuchet-ms-bold-italic', sans-serif;
+    --blue: #7177F1;
+    --bg: #151437;
+    --black: #323232;
+    --white: #FFFFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header__top {
+    margin-bottom: 29px;
+}
+
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+.navbar-brand {
+    font-family: var(--TB);
+    font-size: 24px;
+    color: var(--blue) !important;
+    position: relative;
+    padding: 0 !important;
+}
+
+.navbar-brand > span {
+    color: var(--black);
+    font-family: var(--TBI);
+}
+
+.logo-line {
+    position: absolute;
+}
+
+.logo-line:nth-last-of-type(1),
+.logo-line:nth-last-of-type(2),
+.logo-line:nth-last-of-type(3) {
+    height: 2px;
+    background-color: var(--black);
+}
+
+.logo-line:nth-last-of-type(1) {
+    width: 18px;
+    left: -17px;
+    top: 11px;
+}
+
+.logo-line:nth-last-of-type(2) {
+    width: 27px;
+    color: var(--black);
+    left: -28%;
+    top: 19px;
+}
+
+.logo-line:nth-last-of-type(3) {
+    width: 39px;
+    color: var(--black);
+    left: -39%;
+    top: 28px;
+}
+
+.logo-line:nth-last-of-type(4),
+.logo-line:nth-last-of-type(5) {
+    width: 27px;
+    height: 1px;
+    background: var(--blue);
+    filter: blur(2px);
+    right: -40px;
+}
+
+.logo-line:nth-last-of-type(4) {
+    top: 13px;
+}
+
+.logo-line:nth-last-of-type(5) {
+    bottom: 9px;
+}
+
+.navbar {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.navbar-nav {
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 0 !important;
+    font-family: var(--MR);
+    line-height: 16px;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--blue) !important;
+    transition: .3s;
+}
+
+
+.nav-link:hover {
+    color: var(--black) !important;
+}
+
+.nav-link-btn {
+    display: block;
+    background: var(--blue);
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+    color: #fff !important;
+    padding: 10px 43px !important;
+    transition: .4s;
+}
+
+.nav-link-btn:hover {
+    color: #fff !important;
+    background: #555efc;
+}
+
+.header__subtitle {
+    font-family: var(--MSB);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.header__title{
+    font-family: var(--MSB);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: var(--blue);
+    margin-bottom: 25px;
+}
+
+.default-btn {
+    font-family: var(--MR);
+    font-size: 18px;
+    line-height: 1;
+    align-items: center;
+    text-transform: capitalize;
+    color: var(--white);
+    padding: 10px 43px;
+    width: max-content;
+    transition: .4s;
+    
+    background: var(--blue);
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+}
+
+.default-btn:hover {
+    color: var(--white);
+    background: #555efc;
+}
+
+.header__carousel-content {
+    max-width: 520px;
+}
+
+.header__carousel-item {
+    font-family: var(--MB);
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--blue);
+    justify-content: space-between;
+}
+
+#carouselExampleIndicators {
+    padding-bottom: 85px;
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+    bottom: 0;
+    gap: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #828282;
+    opacity: 1;
+}
+
+.carousel-indicators .active {
+    background-color: var(--blue);
+}
+
+.nav-tabs .nav-link {
+    width: 100%;
+    padding: 19px 20px!important;
+    background: var(--white)!important;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-link.active {
+    background-color: var(--blue)!important;
+    color: var(--white)!important;
+}
+
+.works__img {
+    max-height: 300px;
+    height: 100%;
+    width: auto;
+}
+
+footer .navbar-brand {
+    display: block;
+    height: 34px;
+    width: max-content;
+    margin: 0 auto 20px;
+}
